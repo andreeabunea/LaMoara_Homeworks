@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animal Shelter</title>
+    <script type="text/javascript">
+      function validateForm() {}
+    </script>
+    <script type="text/javascript">
+      function showMessage() {
+        alert("Thank you for your interest in adopting a pet.");
+      }
+    </script>
+  </head>
+  <body>
+    <section>
+      <div class="article-heading">
+        <p>1st homework due on Monday, 2nd of May</p>
+      </div>
+    </section>
+    <section id="article">
+      <div class="blog-title">
+        <h3>Adopt a fluffy friend</h3>
+      </div>
+      <div class="blog-container">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img id="hw-image" src="adopt.JPEG" class="center" />
+            <div class="blog-text">
+              <a href="#" class="box-title">Pets you can find in our shelter</a>
+              <ul style="list-style: none">
+                <span>
+                  <li>Cats</li>
+                </span>
+                <span>
+                  <li>Dogs</li>
+                </span>
+                <span>
+                  <li>Rabbits</li>
+                </span>
+              </ul>
+              <a href="#" class="box-title">Locations</a>
+              <a href="#" class="box-title">Contact</a>
+            </div>
+            <a href="shelter-info.html">
+              <button class="blog-button">Find out more</button>
+            </a>
+          </div>
+        </div>
+        <form id="user-information" name="adoptionForm">
+          <h2>Please fill the adoption form</h2>
+          <p class="first">Name:</p>
+          <input type="text" name="your-name" placeholder="Your name" />
+          <p class="first">City:</p>
+          <input type="text" placeholder="Your city" />
+          <p class="first">Chosen pet:</p>
+          <input type="text" placeholder="Pet" />
+          <button class="form-button" onclick="showMessage()">
+            Send form
+            <form
+              name="myForm"
+              action="/index.js"
+              onsubmit="return validateForm()"
+              method="post"
+              required
+            ></form>
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
